@@ -26,7 +26,7 @@ public class Signup {
 	    @Column(name = "email_id", nullable = false, unique = true)
 	    private String email;
 	    
-	    @Column(name = "Password")
+	    @Column(name = "Password",nullable = false,unique = true)
 	    private String password;
 	    
 	    @Column(name = "Re_Password")
@@ -88,6 +88,9 @@ public class Signup {
 
 		public void setRepassword(String repassword) {
 			this.repassword = repassword;
+		}
+		public Signup() {
+			
 		}
 	    
 		

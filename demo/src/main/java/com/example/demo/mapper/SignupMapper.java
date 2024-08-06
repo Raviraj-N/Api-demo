@@ -31,6 +31,11 @@ public class SignupMapper {
 	               
 	        );
 	    }
-	}
+
+		public static Signupdto mapToSignupDto(Signup signup) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+}
 
 

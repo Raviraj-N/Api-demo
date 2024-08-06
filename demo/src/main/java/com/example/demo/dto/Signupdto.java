@@ -1,21 +1,28 @@
 package com.example.demo.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@Getter
-@Setter
+import lombok.AllArgsConstructor;
+
+import lombok.NoArgsConstructor;
+
+
+
+
 @NoArgsConstructor
 @AllArgsConstructor
 public class Signupdto {
 	
-	
         private Long id;
 	    private String name;
+	    
+	    @JsonProperty("mobileNo")
 	    private Long mobileNo;
+	    
+	    
 	    private String email;
+	    
+	    @JsonProperty("password")
 	    private String password;
 	    private String repassword;
 	    
@@ -64,6 +71,9 @@ public class Signupdto {
 		}
 		public void setRepassword(String repassword) {
 			this.repassword = repassword;
+		}
+		public Signupdto() {
+			
 		}
 	}
 
